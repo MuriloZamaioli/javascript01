@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
+    <title>Suits</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
     <main>
         <h1 class="nome-empresa">Suits</h1>
-        <header class="cabecalho">
+        <div class="cabecalho">
             <a href="#" class="menu">Home</a>
             <a href="#" class="menu">Serviços</a>
             <a href="#" class="menu">Contato</a>
-        </header>
+        </div>
+
         <img src="imagens/fundo.jpg" alt="Equilibrio" class="banner">
-        <div class="pagina-menu">
-            <h2 class="servicos">Serviços</h2>
-            <nav class="menu-servico">
-                <img src="" alt="" class="img-servico">
-                <a href="#" class="tipo-servico">1 - Assessoria e Elaboração de Contratos</a>
-                <a href="#" class="tipo-servico">2 - Litígios e Defesa em Ações Cíveis</a>
-                <a href="#" class="tipo-servico">3 - Consultoria e Representação em Casos de Danos Morais e Materiais</a>
-            </nav>
-            <div class="imagens">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+
+        <h2 class="titulo-servico">Serviços</h2>
+        <div class="menu-servico">
+            <img src="imagens/serviço.jpg" alt="Martelo" class="img-servico">
+            <div class="tipos-servico">
+                <a href="#" class="servico">1 - Elaboração e Revisão de Contratos</a>
+                <a href="#" class="servico">2 - Defesa em Processos Judiciais</a>
+                <a href="#" class="servico">3 - Consultoria Jurídica</a>
             </div>
         </div>
-        <h2 class="titulo-contato">Contato</h2>
-        <div class="preenchimento">
-            
+
+        <div class="imagens">
+            <img src="imagens/contrato.jpg" alt="Contrato" class="img">
+            <img src="imagens/defesa.jpg" alt="Defesa" class="img">
+            <img src="imagens/consultoria.jpg" alt="Consultoria" class="img">
+        </div>
+
+        <div class="formulario">
+            <h3 class="titulo-contato">Contato</h3>
+            <input type="text" name="nome" placeholder="Digite seu Nome" required>
+            <input type="email" name="email" placeholder="Digite seu E-mail" required>
+            <textarea name="mensagem" placeholder="Deixe uma Mensagem" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+
         </div>
     </main>
 </body>
+
 </html>

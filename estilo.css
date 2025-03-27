@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,6 +26,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-family: 'Merriweather', serif;
 }
 ol, ul {
 	list-style: none;
@@ -42,34 +46,134 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 main{
     width: 1200px;
     margin: 0 auto;
 }
+
 .nome-empresa{
-    font-family: 'poppins';
-    font-size: 72px;
-    font-weight: 700;
-    color: black;
+    padding: 20px;
+    color:black;
+    font-size: 60px;
+    font-weight: bold;
     text-align: center;
-    margin-top: 80px;
 }
+
 .cabecalho{
-    text-align: center;
-    justify-content: space-around ;
     display: flex;
+    justify-content: center;
+    padding: 18px 0;
+    margin-left: 36px;
 }
+
 .menu{
     text-decoration: none;
-    color: rgb(63, 59, 59);
+    color: black;
     font-weight: 500;
-    font-family: 'poppins';
     font-size: 35px;
-    margin: 0 90px;
+    padding: 10px 20px;
+    margin: 0 30px;
 }
+
+.menu:hover{
+    color: #28a745;  
+}
+
 .banner{
-    margin-top: 20px;
+    filter: grayscale(50%);
     width: 100%;
-    height: 300px;
+    height: 100%;
+    background-size: cover;
+    border-radius: 4px;
+}
+
+.titulo-servico{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    margin: 30px 0px;
+}
+
+.menu-servico {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.img-servico {
+    width: 400px; 
+}
+
+.tipos-servico {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px; 
+}
+
+.servico {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.servico:hover {
+    color: #28a745; 
+}
+
+.imagens{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img{
+    width: 300px;
+    border-radius: 4px;
     
+}
+
+
+
+.formulario {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-contato{
+    font-size: 40px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+input, textarea, button {
+    width: 800px;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+button {
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 100px;
+}
+
+button:hover {
+    background: #218838;
 }
