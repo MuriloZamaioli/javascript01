@@ -1,8 +1,29 @@
-// alert("olá seja bem vindo")
-console.log("posso escrever aqui também")
-console.log(10+2)
-console.log(10-2)
-console.log(10*2)
-console.log(10/5)
-console.log(parseFloat("10") + 2)
-console.log("João" + " " + "Paulo")
+let nomeCompleto = ("")
+nomeCompleto = prompt ("informe seu nome completo:")
+ 
+let cor = prompt ("Informe uma cor: \n 1-azul \n 2-Vermelho \n 3-preto \n 4-Verde \n 5-Rosa \n 6-Laranja")
+let corDeFundo = null
+ 
+if(cor == "1"){
+    corDeFundo = "blue"
+}
+else if(cor =="2"){
+    corDeFundo = "red"
+}
+else if(cor == "3"){
+    corDeFundo = "black"
+}
+else if(cor =="4"){
+    corDeFundo = "green"
+}
+else if(cor == "5"){
+    corDeFundo = "pink"
+}
+else if(cor == "6"){
+    corDeFundo = "orange"
+}
+else{
+    corDeFundo = "yellow"
+}
+ 
+document.body.style.backgroundColor = corDeFundo
