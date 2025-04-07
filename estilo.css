@@ -52,7 +52,7 @@ main{
     margin: 0 auto;
 }
 
-.nome-empresa{
+.titulo{
     padding: 20px;
     color:black;
     font-size: 60px;
@@ -81,7 +81,6 @@ main{
 }
 
 .banner{
-    filter: grayscale(50%);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -157,7 +156,7 @@ main{
     margin-bottom: 30px;
 }
 
-input, textarea, button {
+input, textarea, .botao {
     width: 800px;
     margin: 10px 0;
     padding: 8px;
@@ -166,7 +165,7 @@ input, textarea, button {
 
 }
 
-button {
+.botao {
     background: #28a745;
     color: white;
     cursor: pointer;
@@ -174,6 +173,6 @@ button {
     width: 100px;
 }
 
-button:hover {
+.botao:hover {
     background: #218838;
 }
