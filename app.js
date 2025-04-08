@@ -102,7 +102,16 @@ function fnTrocarImagem3(){
 }
 function fnVoltarImagem3(){
     document.getElementById("imagem3").src="imagens/consultoria1.jpg"
-}  
- 
- 
- 
+}
+function fnRegistrarContato(){
+    let nome = document.getElementById("nome").value
+    let email = document.getElementById("email").value
+    let mensagem = document.getElementById("mensagem").value
+    let informacoesCompleta = nome + " - " + email + "<br><br>" + mensagem
+    document.getElementById("informacoes").innerHTML = informacoesCompleta
+
+    //limpar os campos 
+    document.getElementById("nome").value =""
+    document.getElementById("email").value =""
+    document.getElementById("mensagem").value =""
+}

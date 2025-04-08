@@ -52,10 +52,11 @@
 
         <div class="formulario">
             <h3 class="titulo-contato">Contato</h3>
-            <input type="text" name="nome" placeholder="Digite seu Nome" required>
-            <input type="email" name="email" placeholder="Digite seu E-mail" required>
-            <textarea name="mensagem" placeholder="Deixe uma Mensagem" rows="4" required></textarea>
-            <button type="submit" class="botao">Enviar</button>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" required>
+            <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required>
+            <textarea name="mensagem" id="mensagem" placeholder="Deixe uma Mensagem" rows="4" required></textarea>
+            <button type="button" onclick="fnRegistrarContato()" class="botao">Enviar</button>
+            <p id="informacoes"></p>
         </div>
     </main>
     <script src="app.js"></script>
